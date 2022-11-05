@@ -5,7 +5,7 @@ To implement a line tracking vehicle that can determine whether if a block is ma
 
 It is very important to know what each mode entails:
 
-Mode0: inactive; 
+Mode0: inactive
 Mode1: drive_PD; 
 Mode2: drive_blind; 
 Mode3: exit; 
