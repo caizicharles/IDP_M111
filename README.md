@@ -1,4 +1,4 @@
-IDP_M111 <br>
+# IDP_M111 <br>
 **Software Documentation**
 
 To implement a line tracking vehicle that can determine whether if a block is magnet and deliver that block to the appropriate location, I coded a finite state machine that takes sensor readings (Sensors.cpp and Sensors.h), sets a customized mode, calls actuator functions (Vehicle_Motion.cppand Vehicle_Motion.h), and implement a sequence of actions (IDP_M111.ino).
