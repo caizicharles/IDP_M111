@@ -5,15 +5,15 @@ To implement a line tracking vehicle that can determine whether if a block is ma
 
 It is very important to know what each mode entails:
 
-Mode0: inactive
-Mode1: drive_PD; 
-Mode2: drive_blind; 
-Mode3: exit; 
-Mode4: pick-up; 
-Mode5: drop-off; 
-Mode6: align; 
-Mode7: return; 
-Mode8: home.
+Mode0: inactive; <br>
+Mode1: drive_PD; <br>
+Mode2: drive_blind; <br>
+Mode3: exit; <br>
+Mode4: pick-up; <br>
+Mode5: drop-off; <br>
+Mode6: align; <br>
+Mode7: return; <br>
+Mode8: home. <br>
 
 Redundancies are also included to ensure successful execution of sequences. For instance, timers are set on top of getting line sensor readings to set Mode 3 taht leaves the initial white box. These precautions reduces the algorithm's dependency on sensors thus rendering the vehicle less susceptable to environmental conditions. Libraries were used to make the program easily readable.
 
