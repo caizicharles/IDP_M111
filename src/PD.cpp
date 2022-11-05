@@ -8,7 +8,7 @@
  *  if gyroscope reads the vehicle is truning around a corner, a greater K_P value is used.
  *  
  *  Parameters: None
- *  Returns: int output; An integer PD value that is passed into the PD drive function.
+ *  Returns: int output (an integer PD value that is passed into the PD drive function)
  */
 
 int PD_control(void)
