@@ -16,6 +16,9 @@ Mode8: home. <br>
 
 Redundancies are also included to ensure successful execution of sequences. For instance, timers are set on top of getting line sensor readings to set Mode 3 taht leaves the initial white box. These precautions reduces the algorithm's dependency on sensors thus rendering the vehicle less susceptable to environmental conditions. Libraries were used to make the program easily readable.
 
+The struction of the algorithm is shown below:
+![Flowcharts](https://user-images.githubusercontent.com/98086762/200123475-c2325853-6139-4bbc-a580-95a8a4eeac9f.png)
+
 A software day starts with calibrating the vehicle: make sure no wires are loose; tune the corr variable (Vehicle_Motion.cpp) to correct for motor imbalance; adjust K_P value for both line and turn and alter the threshold value for gyroscope (Sensors.cpp) since motor output power varies each day. All changes made are then tested and debugged afterwards. Overall I spent over 90 hours on software, 60% of those time are dedicated to calibration.
 
 **All the code is included in the src folder。**
