@@ -1,11 +1,12 @@
 #include "Sensors.h"
 
-#define K_P_rot 90  //turning K_P
-#define K_P_line 55 //straight line K_P
+#define K_P_rot 90
+#define K_P_line 55
 #define K_D 0
 
 /*  Returns a PD value based on error calculated from linesensor sequence and gyroscope reading,
  *  if gyroscope reads the vehicle is truning around a corner, a greater K_P value is used.
+ *  
  *  Parameters: None
  *  Returns: int output; An integer PD value that is passed into the PD drive function.
  */
@@ -18,7 +19,7 @@ int PD_control(void)
   static unsigned long previousMillis = 0;
   unsigned long currentMillis, interval = 4000;
 
-  //determining error
+  //Determining error
   if(linesensor[0] == 1 && linesensor[1] == 0 && linesensor[2] == 0) {error = 1;}
   else if((linesensor[0] == 0 && linesensor[1] == 1 && linesensor[2] == 0) || (linesensor[0] == 0 && linesensor[1] == 0 && linesensor[2] == 1)) {error = -1;}
   
